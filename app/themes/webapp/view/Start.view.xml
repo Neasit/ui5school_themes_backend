@@ -1,0 +1,23 @@
+<mvc:View controllerName="sapui5school.themes.controller.Start"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <List id="idMainList" items="{/Themes}">
+                <headerToolbar>
+                    <Toolbar>
+                        <Title text="{i18n>listTitle} {app>/listLength}"/>
+                        <ToolbarSpacer />
+                        <SearchField value="{app>/listSearch}" search="onSearch" width="200px" />
+                        <Button icon="sap-icon://add" tooltip="{i18n>create}" press="onAdd" />
+                    </Toolbar>
+                </headerToolbar>
+                <ObjectListItem intro="{description}" number="{owner}" title="{title}" type="Active" press="onItemPress">
+                    <firstStatus>
+                        <ObjectStatus text="{status}" />
+                    </firstStatus>
+                </ObjectListItem>
+            </List>
+        </content>
+    </Page>
+</mvc:View>

@@ -39,6 +39,7 @@ RUN \
 WORKDIR /home/service
 
 RUN su node -c "npm install -g @sap/cds-dk"
+RUN cds deploy --to sqlite
 
 EXPOSE 4004/TCP
 
