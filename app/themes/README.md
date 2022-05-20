@@ -1,24 +1,6 @@
-## Application Details
-|               |
-| ------------- |
-|**Generation Date and Time**<br>Thu May 19 2022 23:08:27 GMT+0300 (Москва, стандартное время)|
-|**App Generator**<br>@sap/generator-fiori-freestyle|
-|**App Generator Version**<br>1.6.0|
-|**Generation Platform**<br>Visual Studio Code|
-|**Floorplan Used**<br>simple|
-|**Service Type**<br>OData Url|
-|**Service URL**<br>http://localhost:4004/themes
-|**Module Name**<br>themes|
-|**Application Title**<br>Themse app|
-|**Namespace**<br>sapui5school|
-|**UI5 Theme**<br>sap_fiori_3|
-|**UI5 Version**<br>1.84.0|
-|**Enable Code Assist Libraries**<br>False|
-|**Add Eslint configuration**<br>False|
+## Themes - Sample application
 
-## themes
-
-Sample SAPUI5 Application
+Sample SAPUI5 Application with backend on SAP CAP
 
 ### Starting the generated app
 
@@ -36,6 +18,7 @@ Sample SAPUI5 Application
 
 #### Pre-requisites:
 
-1. Active NodeJS LTS (Long Term Support) version and associated supported NPM version.  (See https://nodejs.org)
-
-
+1. Start node.js backed server using Docker image
+```
+    docker run -p 4004:4004 neasit/themes-sapcap
+```
